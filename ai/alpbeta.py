@@ -302,7 +302,7 @@ class AI:
             x = self.eval_fn(copyed_board)
             return x
 
-        self.to_cache(board, lowest_score, "min", alp, beta)
+        # self.to_cache(board, lowest_score, "min", alp, beta)
         return lowest_score
 
     def _max(self, board, action, depth, alp, beta):
@@ -336,5 +336,5 @@ class AI:
             x = self.eval_fn(copyed_board)
             return x
 
-        self.to_cache(board, max_score, "max", alp, beta)
+        # self.to_cache(board, max_score, "max", alp, beta)
         return max_score
